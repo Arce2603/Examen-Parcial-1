@@ -1,13 +1,25 @@
-.main{
+* {
+    box-sizing: border-box;
+}
+
+.main {
     width: 100%;
     height: 300px;
     background: lightgoldenrodyellow;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
   
   .container{
-    width: 400px;
+    width: 100%;
     height: 250px;
     background: lightpink;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
   }
   
   .box{
@@ -19,9 +31,82 @@
   
   .topRow {
     height: 50%;
+    display:flex;
+    flex-direction:row;
   }
-  
-  .bottomRow {
+
+.bottomRow {
     height: 50%;
-    
+    display: flex;
+    flex-direction: row;
+}
+
+  @media (min-width: 700px) and (max-width:900px){
+
+    .container {
+        width: 700px;
+        height: 250px;
+        background: lightpink;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box {
+        width: 50px;
+        height: 50px;
+        background: white;
+        margin: 50px;
+    }
+
+    .topRow {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .bottomRow {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
   }
+
+@media (min-width: 901px) {
+    .container {
+        width: 700px;
+        height: 250px;
+        background: blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box {
+        width: 50px;
+        height: 50px;
+        background: white;
+        margin: 50px;
+    }
+    .topRow {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .bottomRow {
+        height: 50%;
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
